@@ -44,6 +44,7 @@
             HorizontalAlignment="Center"
             VerticalAlignment="Top"
             Canvas.Left="133"
-            Canvas.Top="49" />
+            Canvas.Top="49"
+            Background="#FFB1B7DD" />
     </Canvas>
 </Window>

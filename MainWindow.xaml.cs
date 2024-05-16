@@ -25,7 +25,7 @@ namespace Prog122_L10_Notes_Week7
             //nc.Height = 300;
 
             //canvasMain.Children.Add(nc);
-            //MessageBox.Show(canvasMain.Children.Count.ToString());
+            MessageBox.Show($"Number of Items in the Canvas List Children: {canvasMain.Children.Count.ToString()}");
             
 
         }//end Of MainWindow
@@ -52,35 +52,40 @@ namespace Prog122_L10_Notes_Week7
             
             
         }
-
+        //Create click event for button UserControl
         private void btnUserControl_Click(object sender, RoutedEventArgs e)
         {
+            //Clear the canvas so current instance of user control is remnoved iof there is one
             ClearCavas();
+            //Create double variables for canvas size to be used to size the new instance of user control
             double canWidth = canvasDisplay.Width;
             double canHeight = canvasDisplay.Height;
-
+            //Create new instance of user control naming it ucw and using double variables to size it
             NewControl ucw = new NewControl();
             ucw.Width = canWidth;
             ucw.Height = canHeight;
-
+            //adding new instance of user control to canvas list Children
             canvasDisplay.Children.Add(ucw);
         }
-
+        //Create click event for button UserControl2
         private void btnUserControl2_Click(object sender, RoutedEventArgs e)
         {
+            //Clear canvas so current instance of user control is removed if there is one
             ClearCavas();
+            //Create double variables for canvas size to be used to size the new instance of user control
             double canWidth = canvasDisplay.Width;
             double canHeight = canvasDisplay.Height;
-
-            UserControl2 ucw = new UserControl2();
-            ucw.Width = canWidth;
-            ucw.Height = canHeight;
-
-            canvasDisplay.Children.Add(ucw);
+            //Create new instance of user control naming it ucw2 and using double variables to size it
+            UserControl2 ucw2 = new UserControl2();
+            ucw2.Width = canWidth;
+            ucw2.Height = canHeight;
+            //adding new instance of user control to canvas list Children
+            canvasDisplay.Children.Add(ucw2);
         }
-
+        //Create method to clear the canvas of current user control
         public void ClearCavas()
         {
+            //Clear the canvas list Children
             canvasDisplay.Children.Clear();
         }
     }//end of partial class

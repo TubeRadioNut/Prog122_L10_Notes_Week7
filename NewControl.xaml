@@ -9,7 +9,7 @@
     <Canvas
         Background="#FFD55858">
         <TextBlock
-            Text="Hello, this a User Control!"
+            Text="Hello, this is a User Control!"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             FontSize="20" />
